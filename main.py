@@ -12,7 +12,7 @@ def launchTests():
 		if name.startswith("_") or name.endswith(".swp") or name.endswith("~"):
 			print "[-] Ignoring {}".format(name)
 		else:
-			print "[+] Starting {}".format(name)
+			print "[*] Starting {}".format(name)
 			subprocess.call(["./tests/"+name])
 		print "================================="
 

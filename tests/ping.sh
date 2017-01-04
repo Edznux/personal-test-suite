@@ -3,8 +3,7 @@
 #this is aweful.
 . "$(dirname $0)/../bcolor.sh"
 
-echo "[*] Starting ping test"
-for host in $(cat "$(dirname $0)/_hosts.list"); do
+for host in $(cat "$(dirname $0)/../hosts.list"); do
 	ping -c1 $host > /dev/null 2>&1
 	status=$?
 	if [ $status -eq "0" ];then
