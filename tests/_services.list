@@ -21,3 +21,5 @@ sysstat
 udev
 ufw
 urandom
+netdata
+ts3server
